@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>详情</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link href='lib/bootstrap/css/bootstrap.min.css' rel='stylesheet'/>
+    <link href='css/app.css' rel='stylesheet'/>
+  </head>
+
+  <body>
+    <!--header-->
+    <div class='header-bar'>
+      <nav class="navbar navbar-custom">
+        <div class="container-fluid container header-wrap">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle ">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src='images/logo.png' alt='logo' /></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class='active'><a href="#">首页</a></li>
+              <li><a href="#">数据目录</a></li>
+              <li><a href="#">数据视图</a></li>
+              <li><a href="#">数据需求</a></li>
+              <li class='login'><a href="#">登陆</a></li>
+              <li class='register'><a href="#">注册</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+
+    <!--search-->
+    <div class='search-bar'>
+      <div class='container'>
+        <ol class="breadcrumb breadcrumb-category">
+          <img src='images/spot.png' class='spot-img' />
+          <li>85个部门</li>
+          <li>1385类数据</li>
+          <li>2388万条数据</li>
+          <li>2368万条已共享交换</li>
+        </ol>
+        <div class='search-input'>
+          <input type='text' /><a class='btn-search'>搜索</a>
+          <a class='btn btn-search-more'>高级搜索</a>
+        </div>
+      </div>
+    </div>
+
+    <!--content-->
+    <div class='container content-wrap'>
+      <ol class="breadcrumb breadcrumb-locate">
+        <img src='images/locate.png' class='locate-img' />
+        <li>首页</li>
+        <li>数据目录</li>
+        <li>数据详情</li>
+      </ol>
+      <div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs nav-res" role="tablist">
+          <li role="presentation" class="active"><a href="#resDetail" aria-controls="resDetail" role="tab" data-toggle="tab">资源详情</a></li>
+          <li role="presentation"><a href="#resChart" aria-controls="resChart" role="tab" data-toggle="tab">资源图谱</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <!--资源详情-->
+          <div role="tabpanel" class="tab-pane active" id="resDetail">
+            <div class='res-profile flex-row'>
+              <div class='profile-info flex5'>
+                <div class='info-title'>
+                  四川省工商企业注册信息
+                  <div class='pull-right info-links'>
+                    <a class='btn btn-follow'>关注</a>
+                    <a class='btn btn-apply'>申请访问</a>
+                  </div>
+                </div>
+                <div class='info-table-wrap'>
+                  <table class='info-table text-center'>
+                    <thead>
+                      <tr>
+                        <th width='16%'>数据量</th>
+                        <th width='16%'>流转次数</th>
+                        <th width='15%'>点击率</th>
+                        <th width='15%'>关注度</th>
+                        <th width='14%'>活跃度</th>
+                        <th width='14%'>服务运行状态</th>
+                      </tr>
+                    <thead>
+                      <tbody>
+                        <tr>
+                          <td>13.6万条</td>
+                          <td>13.6万次</td>
+                          <td>1300次</td>
+                          <td>130次</td>
+                          <td>55%</td>
+                          <td>正常</td>
+                        </tr>
+                      </tbody>
+                  </table>
+                  <div class='time-wrap'>
+                    <div class='pull-left'>发布日期：2017-05-03</div>
+                    <div class='pull-right'>数据更新时间：2017-05-03</div>
+                  </div>
+                </div>
+              </div>
+              <div class='profile-pic flex3'>
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="images/aic_logo.png" alt="部门logo">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <ul class='dept-infos'>
+                      <li><label class='info-label'>数据提供部门：</label><span>省工商局</span></li>
+                      <li><label class='info-label'>部&nbsp;&nbsp;门&nbsp;&nbsp;类&nbsp;&nbsp;别：</label><span>政府</span></li>
+                      <li><label class='info-label'>提供数据类别：</label><span>20个</span></li>
+                      <li><label class='info-label'>数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;据&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</label><span>2.32万条</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='res-details'>
+              <div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-res" role="tablist">
+                  <li role="presentation" class="active"><a href="#detailInfo" aria-controls="detailInfo" role="tab" data-toggle="tab">详细信息</a></li>
+                  <li role="presentation"><a href="#exampleData" aria-controls="exampleData" role="tab" data-toggle="tab">样例数据</a></li>
+                  <li role="presentation"><a href="#serviceAPI" aria-controls="serviceAPI" role="tab" data-toggle="tab">服务API</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <!--详细信息-->
+                  <div role="tabpanel" class="tab-pane active" id="detailInfo">
+                    详细
+                  </div>
+                  <!--样例数据-->
+                  <div role="tabpanel" class="tab-pane" id="exampleData">
+                    样例数据
+                  </div>
+                  <!--服务API-->
+                  <div role="tabpanel" class="tab-pane" id="serviceAPI">
+                    服务API
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--资源图谱-->
+          <div role="tabpanel" class="tab-pane" id="resChart">2</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Libraries -->
+    <script src='lib/jquery/jquery.min.js'></script>
+    <script src='lib/bootstrap/js/bootstrap.min.js'></script>
+  </body>
+</html>
