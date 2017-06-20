@@ -18,9 +18,6 @@ gulp.task('sass', function(){
     .pipe(sass()) // Converts Sass to CSS with gulp-sass
     .pipe(gulp.dest('./client/css'))
 });
-gulp.task('watch', function(){
-  gulp.watch('./client/scss/**/*.scss', ['sass']); 
-})
 // Static Server
 gulp.task('connect', function() {
   connect.server({
@@ -36,5 +33,5 @@ gulp.task('livereload', ['sass'], function() {
 });
 // Watch Client
 gulp.task('watch', function() {
-  gulp.watch(['./client/scss/**/*.*', './client/*.html'], ['livereload']);
+  gulp.watch(['./client/scss/**/*.*', './client/**/*.html'], ['livereload','sass']);
 })

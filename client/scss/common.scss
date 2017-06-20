@@ -1,7 +1,7 @@
 $fontSize: 14px;
 $baseLineHeight : 1.5 !default;
 $linkColor: #445475 #24A2FF #007AD4;
-$fontColor: #475065 #8A93A8;
+$fontColor: #475065 #8A93A8 #FFFFFF;
 
 @mixin box-sizing($sizing) {
   -webkit-box-sizing: $sizing;

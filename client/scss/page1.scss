@@ -1,0 +1,103 @@
+.index {
+  background: url(../images/bg.png);
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;//老版本的 Firefox 
+  background-repeat: no-repeat;
+  .navbar-index {
+    height: 100px;
+    margin-bottom: 0;
+  }
+  .search-bar-index {
+    margin: 90px 325px 100px 326px;
+    height: 300px;
+    .form-group {
+      margin-bottom: 0;
+    }
+    label {
+      width: 229px;
+      height: 20px;
+      font-size: 14px;
+      color: nth($fontColor, 3);
+      ;
+    }
+    .search-input-index {
+      padding: 20px 0;
+      input {
+        background: nth($fontColor, 3);
+        ;
+        box-shadow: 1px 2px 0 0 rgba(217, 217, 217, 0.50);
+        border-radius: 2px;
+        border: none;
+        height: 44px;
+        width: 360px;
+        padding: 4px 20px;
+        outline: none;
+      }
+      .btn-search {
+        background-image: linear-gradient(-90deg, #5AE64A 1%, #00A0FC 99%);
+        border-radius: 2px;
+        height: 44px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100px;
+        padding: 10px;
+        text-align: center;
+        color: nth($fontColor, 3);
+        ;
+        text-decoration: none;
+        &:hover {
+          background-image: linear-gradient(-90deg, #7FFF70 1%, #5DC3FE 99%);
+        }
+        &:active,
+        &:visited {
+          background-image: linear-gradient(-90deg, #2CCF1A 1%, #0089D8 99%);
+        }
+      }
+      .btn-search-more {
+        border-radius: 2px;
+        padding: 12px 24px;
+        border: 1px solid #9FA7FF;
+        margin-left: 15px;
+        color: nth($fontColor, 3);
+        ;
+        font-size: 14px;
+        &:hover {
+          background: #E4F3FF;
+          box-shadow: 1px 2px 0 0 rgba(217, 217, 217, 0.50);
+          color: nth($linkColor, 2);
+        }
+        &:active,
+        &:visited {
+          background: #C3E3FF;
+          box-shadow: 1px 2px 0 0 rgba(217, 217, 217, 0.50);
+          color: nth($linkColor, 2);
+        }
+      }
+    }
+    .breadcrumb-category-index {
+      padding: 20px 0;
+      margin-bottom: 0;
+      border: none !important;
+      border-radius: none !important;
+      font-size: 18px;
+      line-height: 33px;
+      background: none !important;
+      color: nth($fontColor, 3);
+      li {
+        color: nth($fontColor, 3);
+        font-size: 18px;
+        vertical-align: middle;
+      }
+      li+li {
+        &:before {
+          font-size: 18px;
+          vertical-align: middle;
+          padding: 0 6px 0 8px;
+        }
+      }
+    }
+    .breadcrumb-font {
+      font-size: 24px;
+    }
+  }
+}
