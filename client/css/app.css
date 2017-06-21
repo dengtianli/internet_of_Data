@@ -512,6 +512,7 @@ a {
       .index .search-bar-index .breadcrumb-category-index li + li:before {
         font-size: 18px;
         vertical-align: middle;
-        padding: 0 6px 0 8px; }
+        padding: 0 6px 0 8px;
+        color: #FFFFFF; }
     .index .search-bar-index .breadcrumb-font {
       font-size: 24px; }

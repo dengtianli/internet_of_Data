@@ -2,7 +2,9 @@ $fontSize: 14px;
 $baseLineHeight : 1.5 !default;
 $linkColor: #445475 #24A2FF #007AD4;
 $fontColor: #475065 #8A93A8 #FFFFFF;
-
+// $font-family: PingFangSC-Regular;
+// $color: #FFFFFF;
+// $line-height:20px;
 @mixin box-sizing($sizing) {
   -webkit-box-sizing: $sizing;
   -moz-box-sizing: $sizing;
